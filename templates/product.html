@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+<meta name="keyword" content="{{item.meta_keyword}}">
+<meta name="description" content="{{item.meta_desc}}">
+{% endblock %}
+
+{% block head_title %}
+{{item.title}}
+{% endblock %}
+
 {% block content %}
 
   <main class="mt-5 pt-4">
